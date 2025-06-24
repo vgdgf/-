@@ -1,0 +1,1 @@
+export const Card = ({ children, className = "" }) => <div className={`bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-shadow p-5 border border-gray-200 dark:border-gray-700 ${className}`}>{children}</div>;

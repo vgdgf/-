@@ -1,0 +1,137 @@
+/* Reset some default styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Set base font */
+body {
+  font-family: 'Tajawal', sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+  direction: rtl; /* دعم اتجاه النص من اليمين لليسار */
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* الروابط */
+a {
+  color: #10b981; /* أخضر زمردي */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #047857;
+  text-decoration: underline;
+}
+
+/* أزرار */
+button {
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 9999px; /* دائري */
+  padding: 0.75rem 1.5rem;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #047857;
+}
+
+/* تصميم الوضع الليلي */
+body.dark {
+  background-color: #121212;
+  color: #e5e7eb;
+}
+
+body.dark a {
+  color: #6ee7b7;
+}
+
+body.dark a:hover {
+  color: #34d399;
+}
+
+body.dark button {
+  background-color: #059669;
+}
+
+body.dark button:hover {
+  background-color: #047857;
+}
+
+/* تنسيقات عامة للعناوين */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+/* مساحات بين الفقرات */
+p {
+  margin-bottom: 1rem;
+}
+
+/* تنسيق القائمة */
+ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* تنسيق خاص للأيقونات مع النص */
+.icon-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #10b981;
+}
+
+/* تحسين التباعد في النصوص */
+.lead {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* تنسيق مخصص للبطاقات */
+.card {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+body.dark .card {
+  background: #1f2937;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 0.6);
+}
